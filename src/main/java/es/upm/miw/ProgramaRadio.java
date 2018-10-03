@@ -1,6 +1,7 @@
 package es.upm.miw;
 
 import java.time.DayOfWeek;
+import java.util.List;
 
 public class ProgramaRadio {
 
@@ -9,6 +10,8 @@ public class ProgramaRadio {
     private boolean nocturno;
     private String nombre;
     private DayOfWeek diaEmision;
+
+    private List<Album> albumes;
 
     public ProgramaRadio() {
     }
@@ -50,6 +53,10 @@ public class ProgramaRadio {
     public void setDiaEmision(DayOfWeek diaEmision) {
         this.diaEmision = diaEmision;
     }
+
+    public List<Album> getAlbumes() { return albumes; }
+
+    public void setAlbumes(List<Album> albumes) { this.albumes = albumes; }
 
     @Override
     public String toString() {
