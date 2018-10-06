@@ -11,7 +11,12 @@ public class EdicionEspecial {
     public EdicionEspecial() {
     }
 
-    public EdicionEspecial(String nombre, LocalDateTime fechaPublicacion) {
+    public EdicionEspecial(String id) {
+        this.id = id;
+    }
+
+    public EdicionEspecial(String id, String nombre, LocalDateTime fechaPublicacion) {
+        this.id = id;
         this.nombre = nombre;
         this.fechaPublicacion = fechaPublicacion;
     }

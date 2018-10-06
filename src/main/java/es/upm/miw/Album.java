@@ -3,25 +3,37 @@ package es.upm.miw;
 import java.time.LocalDateTime;
 
 public class Album {
-    private String id;
 
+    private String id;
     private String nombre;
+    private String artista;
     private LocalDateTime fechaEdicion;
     private Integer numPistas;
-
     private Genero genero;
     private Sello sello;
 
     public Album() {
     }
 
-    public Album(String nombre, LocalDateTime fechaEdicion, Integer numPistas, Genero genero, Sello sello) {
+    public Album(String id) {
+        this.id = id;
+    }
+
+    public Album(String id, String nombre, String artista, LocalDateTime fechaEdicion, Integer numPistas, Genero genero, Sello sello) {
         this.nombre = nombre;
+        this.artista = artista;
         this.fechaEdicion = fechaEdicion;
         this.numPistas = numPistas;
         this.genero = genero;
         this.sello = sello;
     }
+
+    public Album(String id, String nombre, Genero genero, Sello sello) {
+        this.nombre = nombre;
+        this.genero = genero;
+        this.sello = sello;
+    }
+
 
     public String getId() {
         return id;
@@ -37,6 +49,14 @@ public class Album {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
     public LocalDateTime getFechaEdicion() {
