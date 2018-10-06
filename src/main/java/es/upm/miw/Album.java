@@ -20,6 +20,7 @@ public class Album {
     }
 
     public Album(String id, String nombre, String artista, LocalDateTime fechaEdicion, Integer numPistas, Genero genero, Sello sello) {
+        this.id = id;
         this.nombre = nombre;
         this.artista = artista;
         this.fechaEdicion = fechaEdicion;
