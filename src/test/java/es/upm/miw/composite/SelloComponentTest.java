@@ -1,9 +1,7 @@
-package composite;
+package es.upm.miw.composite;
 
 import es.upm.miw.Sello;
 
-import es.upm.miw.composite.SelloComposite;
-import es.upm.miw.composite.SelloLeaf;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
