@@ -1,12 +1,13 @@
 package es.upm.miw;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class EdicionEspecial {
 
     private String id;
-    private LocalDateTime fechaPublicacion;
+    private LocalDate fechaPublicacion;
     private String nombre;
+    private String artista;
 
     public EdicionEspecial() {
     }
@@ -15,10 +16,11 @@ public class EdicionEspecial {
         this.id = id;
     }
 
-    public EdicionEspecial(String id, String nombre, LocalDateTime fechaPublicacion) {
+    public EdicionEspecial(String id, String nombre, LocalDate fechaPublicacion, String artista) {
         this.id = id;
         this.nombre = nombre;
         this.fechaPublicacion = fechaPublicacion;
+        this.artista = artista;
     }
 
     public String getId() {
@@ -29,11 +31,11 @@ public class EdicionEspecial {
         this.id = id;
     }
 
-    public LocalDateTime getFechaPublicacion() {
+    public LocalDate getFechaPublicacion() {
         return fechaPublicacion;
     }
 
-    public void setFechaPublicacion(LocalDateTime fechaPublicacion) {
+    public void setFechaPublicacion(LocalDate fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
     }
 
@@ -45,12 +47,21 @@ public class EdicionEspecial {
         this.nombre = nombre;
     }
 
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
     @Override
     public String toString() {
         return "EdicionEspecial{" +
                 "id='" + id + '\'' +
                 ", fechaPublicacion=" + fechaPublicacion +
                 ", nombre='" + nombre + '\'' +
+                ", artista='" + artista + '\'' +
                 '}';
     }
 }
