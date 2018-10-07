@@ -1,5 +1,9 @@
 # APAW.ECP1.Vanesa.Paniego
-> Este proyecto pretende desarrollar un ejemplo de práctica para aplicar patrones de diseño.
+> Este proyecto pretende desarrollar un ejemplo de práctica para aplicar patrones de diseño sobre las siguientes entidades:
+
+#### Diseño de entidades
+![album-class-diagram](https://github.com/vpaniego/APAW.ECP1.PD.Vanesa.Paniego/blob/develop/doc/APAW-ECP1-Patrones-DiagramaDeClases-Album.png)
+
 
 ### Entrega
 Un gráfico de las entidades y sus relaciones en UML (*.png, *.jpg, *.pdf)
