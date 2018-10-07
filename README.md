@@ -20,9 +20,9 @@ Debe realizarse commits frecuentes, (uno por clase o similar)
 
 ### Estado del código
 
-[![Build Status](https://travis-ci.org/miw-upm/IWVG-forge.svg?branch=develop)](https://travis-ci.org/miw-upm/IWVG-forge)
+[![Build Status](https://travis-ci.org/vpaniego/APAW.ECP1.PD.Vanesa.Paniego.svg?branch=develop)](https://travis-ci.org/vpaniego/APAW.ECP1.PD.Vanesa.Paniego)
 
-![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3AIWVG-forge&metric=alert_status)
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3APAW.ECP1.PD.Vanesa.Paniego&metric=alert_status)
 
 
 ### Tecnologías necesarias
