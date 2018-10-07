@@ -22,7 +22,7 @@ Debe realizarse commits frecuentes, (uno por clase o similar)
 
 [![Build Status](https://travis-ci.org/vpaniego/APAW.ECP1.PD.Vanesa.Paniego.svg?branch=develop)](https://travis-ci.org/vpaniego/APAW.ECP1.PD.Vanesa.Paniego)
 
-![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3APAW.ECP1.PD.Vanesa.Paniego&metric=alert_status)
+![Quality Gate](https://sonarcloud.io/dashboard?id=es.upm.miw%3AAPAW.ECP1.PD.Vanesa.Paniego&metric=alert_status)
 
 
 ### Tecnologías necesarias
