@@ -10,45 +10,44 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SelloComponentTest {
 
-    private SelloLeaf selloLeaf;
-    private SelloComposite selloComposite;
+    private SelloComponent selloSonyMusicSpain;
+    private SelloComponent selloSonyMusic;
+    private SelloComponent selloEpicRecords;
 
     @BeforeEach
     void before() {
-        Sello sello = new Sello("1", "EMI", "Santa Monica");
-        selloLeaf = new SelloLeaf(sello);
+        selloSonyMusic = new SelloComposite("Sony Musica");
 
-        selloComposite = new SelloComposite("Epic Records");
+        Sello sello = new Sello("1", "Sony Music Spain", "Madrid");
+        selloSonyMusicSpain = new SelloLeaf(sello);
+        selloSonyMusic.add(selloSonyMusicSpain);
+
+        selloEpicRecords = new SelloComposite("Epic Records");
+        selloSonyMusic.add(selloEpicRecords);
+
+
     }
 
     @Test
     void testIsSelloLeaf() {
-        assertTrue(!selloLeaf.isComposite());
+        assertTrue(!selloSonyMusicSpain.isComposite());
     }
 
     @Test
     void testIsSelloComposite() {
-        assertTrue(selloComposite.isComposite());
+        assertTrue(selloEpicRecords.isComposite());
     }
 
     @Test
     void testViewSelloLeaf() {
-        assertTrue(!selloLeaf.isComposite());
-        assertEquals("1", selloLeaf.view());
+        assertTrue(!selloSonyMusicSpain.isComposite());
+        assertEquals("1", selloSonyMusicSpain.view());
     }
 
     @Test
     void testViewSelloComposite() {
-        assertTrue(selloComposite.isComposite());
-        assertNull(selloComposite.view());
-    }
-
-
-    @Test
-    void testNameSelloComposite() {
-        assertTrue(selloComposite.isComposite());
-        selloComposite.name("Capital Records");
-        assertNotEquals("Epic Records", selloComposite.getName());
+        assertTrue(selloEpicRecords.isComposite());
+        assertEquals("Epic Records", selloEpicRecords.view());
     }
 
 }
