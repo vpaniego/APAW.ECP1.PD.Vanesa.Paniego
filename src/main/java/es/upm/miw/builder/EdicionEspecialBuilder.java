@@ -12,10 +12,6 @@ public class EdicionEspecialBuilder {
         this.edicionEspecial = new EdicionEspecial();
     }
 
-    public EdicionEspecialBuilder(String id) {
-        this.edicionEspecial = new EdicionEspecial(id);
-    }
-
     public EdicionEspecialBuilder(String id, String nombre, LocalDate fechaPublicacion, String artista) {
         this.edicionEspecial = new EdicionEspecial(id, nombre, fechaPublicacion, artista);
     }

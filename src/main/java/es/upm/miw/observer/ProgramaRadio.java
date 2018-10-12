@@ -22,14 +22,6 @@ public class ProgramaRadio implements Observer {
         this.albumFactory.addObserver(this);
     }
 
-    public ProgramaRadio(String id) {
-        this.id = id;
-        this.nocturno = Boolean.FALSE;
-        this.nombre = "Default";
-        this.diaEmision = DayOfWeek.FRIDAY;
-        this.albumes = new ArrayList<Album>();
-    }
-
     public ProgramaRadio(String id, boolean nocturno, String nombre, DayOfWeek diaEmision, List<Album> albumes) {
         this.id = id;
         this.nocturno = nocturno;

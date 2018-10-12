@@ -12,10 +12,6 @@ public class EdicionEspecial {
     public EdicionEspecial() {
     }
 
-    public EdicionEspecial(String id) {
-        this.id = id;
-    }
-
     public EdicionEspecial(String id, String nombre, LocalDate fechaPublicacion, String artista) {
         this.id = id;
         this.nombre = nombre;
