@@ -16,8 +16,6 @@ public abstract class SelloComponent {
 
     public abstract String view();
 
-    public abstract void name(String name);
-
     public String getName() {
         return name;
     }

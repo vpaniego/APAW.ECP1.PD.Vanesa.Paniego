@@ -31,11 +31,6 @@ public class SelloLeaf extends SelloComponent {
         // Do nothing because is leaf
     }
 
-    @Override
-    public void name(String name) {
-        // Do nothing because is leaf
-    }
-
     public Sello getSello() {
         return sello;
     }

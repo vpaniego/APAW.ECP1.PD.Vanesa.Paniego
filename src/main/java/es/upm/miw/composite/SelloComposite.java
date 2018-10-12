@@ -17,12 +17,10 @@ public class SelloComposite extends SelloComponent {
         return true;
     }
 
-
     @Override
     public void add(SelloComponent selloComponente) {
         assert selloComponente != null;
         this.listaSelloComposite.add(selloComponente);
-
     }
 
     @Override
@@ -33,11 +31,7 @@ public class SelloComposite extends SelloComponent {
 
     @Override
     public String view() {
-        return null;
+        return getName();
     }
 
-    @Override
-    public void name(String nombre) {
-        this.setName(nombre);
-    }
 }
